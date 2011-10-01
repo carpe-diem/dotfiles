@@ -1,0 +1,130 @@
+!
+! ~/.Xdefaults -Carpediem 
+!
+
+!!! Colors !!!
+!
+!black
+*color0: #000000
+*color8: #000000
+!red
+*color1: #e04343
+*color9: #dd6e6e
+!green
+*color2: #8eae71
+*color10: #95c749
+!yellow
+*color3: #e5ca44
+*color11: #e2ce71
+!blue
+*color4: #336699
+*color12: #6699CC
+!magenta
+*color5: #d170bc
+*color13: #d39cc7
+!cyan
+*color6: #00b8b8
+*color14: #00d8d8
+!white
+*color7: #fefefe
+*color15: #eeeeee
+
+!!! Xterm !!!
+!
+xterm*colorMode:        true
+xterm*toolBar:             false
+xterm*scrollBar:        false
+xterm*locale:            UTF-8
+xterm*background:        black
+xterm*foreground:          white
+xterm*faceName:         
+xterm*faceSize:         10    
+xterm*VT100.Translations:     #override <Key>Delete: string("\033[3~")
+
+
+!!! rxvt !!!
+uXft.antialias: true
+!urxvt - setting
+URxvt*background: #000000
+URxvt*foreground: #ffffff
+URxvt*scrollBar: false
+URxvt*font: xft:Bitstream Vera Sans mono:size=9
+!true habilita transparencia
+URxvt*inheritPixmap: false
+URxvt*termName: rxvt
+URxvt.geometry: 400x30 
+URxvt.buffered: true
+URxvt.background: black
+!URxvt.foreground: green
+
+!------------
+!True Transparency
+!------------
+!set to 32-bit for real transparency (compositing required (see xcompmgr)
+urxvt.depth: 32
+urxvt.transparent=0000 opaque=ffff
+urxvt.background: rgba:1111/1111/1111/dddd
+
+!------------------
+!False tranparency
+!------------------
+!URxvt.transparent: true
+!URxvt.shading: 50 
+
+Urxvt.secondaryScroll:  true    # Enable Shift-PageUp/Down in screen
+
+! scrollbar style - rxvt (default), plain, next, or xterm
+!URxvt*scrollstyle:next
+
+! Deshabilita scrollbar
+urxvt.scrollBar: false
+
+! Tabs and matcher url
+URxvt.perl-ext-common:  default,matcher,tabbed
+! url2firefox
+!URxvt.perl-ext-common:  default,matcher
+URxvt.urlLauncher:      /usr/bin/firefox
+URxvt.matcher.button:   1 
+! Tabs colors
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg:    3
+URxvt.tabbed.tab-bg:    0
+
+URxvt.color0:      #000000
+URxvt.color1:      #9e1828
+URxvt.color2:      #aece92
+URxvt.color3:      #968a38
+URxvt.color4:      #414171
+URxvt.color5:      #963c59
+URxvt.color6:      #418179
+URxvt.color7:      #bebebe
+URxvt.color8:      #666666
+URxvt.color9:      #cf6171
+URxvt.color10:     #c5f779
+URxvt.color11:     #fff796
+URxvt.color12:     #4186be
+URxvt.color13:     #cf9ebe
+URxvt.color14:     #71bebe
+URxvt.color15:     #ffffff
+
+! MapKeys
+URxvt.keysym.Home: \033[1~
+URxvt.keysym.End: \033[4~
+
+
+!XIdle.timeout: 300
+!XLock.mode: random
+!XLock.mousemotion: on
+!XLock.nice: 19
+!XLock.program: /usr/games/fortune -a
+!XLock.random.modelist: maze bat biof pyro drift eyes lisa marquee matrix \
+!        molecule nose pacman petri space swarm tetris worm xcl
+
+
+!!! xscreensaver !!!
+!
+xscreensaver.timeout: 10
+xscreensaver.mode: blank
+xscreensaver.lock: true
+xscreensaver.lockTimeout: 20
