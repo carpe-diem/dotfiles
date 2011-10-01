@@ -1,0 +1,20 @@
+#
+# ~/.screenrc - carpediem 
+#
+
+vbell off        # no annoying audible bell, please
+autodetach on        # detach on hangup
+startup_message off    # no startup msg
+escape ^Ff        # ctrl+F as control key
+
+defscrollback 10000
+defutf8 on
+defflow off        # disable Ctrl-S/Ctrl-Q "flow control"
+altscreen on        # restore window contents after using (e.g.) vi
+
+term screen-256color    # term color
+
+setenv DISPLAY ':0'
+
+hardstatus alwayslastline 
+hardstatus string "%{= .b}[%{G}%H%{b}][ %=%{w}%?%-Lw%?%{b}(%{W}%n*%f %t%?(%u)%?%{b})%{w}%?%+Lw%?%?%= %{b}][%{B}%{G}%2c%{b}]"
